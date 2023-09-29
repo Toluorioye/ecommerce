@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+svg{
+  color: aliceblue;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  transition: 1s;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.main{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 70%;
+margin-left: 15rem;
+}
+.mainimg{
+  width: 57%;
+  height: 10%;
+  margin-top: 4rem;
+  border-radius: 20px;
+}
+.thumbnail{
+  display: flex;
+  margin: 2rem auto;
+ margin-left: -30px;
+}
+.thumbnails{
+  width: 5.8rem;
+  border-radius: 0.7rem;
+}
+.thumbnails:hover{
+  border: 3px solid hsl(26, 99%, 49%);
+  opacity: 0.4;
+}
+.sneakers{
+  width: 20%;
+}
+.maintext{
+  width: 50%;
+  margin-left: -10rem;
+}
+.subtitle{
+  color: hsl(24, 74%, 63%);
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.introtext{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.mainpg{
+  color: hsl(220, 14%, 75%);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.price{
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+h1 span{
+  color: hsl(24, 74%, 63%);
+  background-color: hsl(25, 100%, 94%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 0.7rem;
+}
+.cutprice{
+  color: hsl(220, 14%, 75%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+button{
+  outline: none;
+  border:none;
+  cursor: pointer;
+}
+.forcart{
+  display: flex;
+  align-items: center;
+}
+.countbtn{
+  margin-right: 1rem;
+  width: 30%;
+  padding: 15px 40px;
+  background-color:hsl(223, 64%, 98%);
+  border-radius: 5px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.count{
+  padding: 0 40px;
+  font-weight: 800;
+  font-size:1.2rem ;
 }
+.addcart{
+  margin-right: 1rem;
+  width: 50%;
+  padding: 15px 40px;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 900;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carticon{
+  padding-right: 20px;
+  color: aliceblue ;
+  /* fill:white ; */
+}
+@media screen and (max-width: 668px){
+  .mainimg{
+    width: 100%;
+    margin-top: 3rem;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
